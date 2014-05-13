@@ -22,6 +22,7 @@ __all__ = ['ezrss',
            'torrentleech',
            'womble',
            'btn',
+           'torrentday',
            'omgwtfnzbs'
            ]
 

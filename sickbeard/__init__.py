@@ -508,7 +508,7 @@ def initialize(consoleLogging=True):
         CheckSection(CFG, 'TORRENTDAY')
         TORRENTDAY = bool(check_setting_int(CFG, 'TORRENTDAY', 'torrentday', 0))
         TORRENTDAY_USERNAME = check_setting_str(CFG, 'TORRENTDAY', 'torrentday_username', '')
-        TORRENTDAY_PASSWORD = check_setting_str(CFG, 'TORRENTDAY', 'torrentday_passkey', '')
+        TORRENTDAY_PASSWORD = check_setting_str(CFG, 'TORRENTDAY', 'torrentday_password', '')
 
         CheckSection(CFG, 'NZBs')
         NZBS = bool(check_setting_int(CFG, 'NZBs', 'nzbs', 0))
@@ -1031,7 +1031,7 @@ def save_config():
     new_config['TORRENTDAY'] = {}
     new_config['TORRENTDAY']['torrentday'] = int(TORRENTDAY)
     new_config['TORRENTDAY']['torrentday_username'] = TORRENTDAY_USERNAME
-    new_config['TORRENTDAY']['torrentday_password'] = TORRENTDAY_PASSKEY
+    new_config['TORRENTDAY']['torrentday_password'] = TORRENTDAY_PASSWORD
 
     new_config['NZBs'] = {}
     new_config['NZBs']['nzbs'] = int(NZBS)
